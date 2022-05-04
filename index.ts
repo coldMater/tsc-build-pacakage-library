@@ -9,6 +9,7 @@ interface IHuman {
   age: number
   korean: boolean
   under18: boolean
+  created_at: string
 }
 
 export function generateHuman(param: IParam, isKorean: boolean): IHuman {
@@ -17,5 +18,6 @@ export function generateHuman(param: IParam, isKorean: boolean): IHuman {
     age: param.age,
     korean: isKorean,
     under18: !param.isAdult,
+    created_at: new Date().toISOString(),
   }
 }

@@ -8,6 +8,7 @@ interface IHuman {
     age: number;
     korean: boolean;
     under18: boolean;
+    created_at: string;
 }
 export declare function generateHuman(param: IParam, isKorean: boolean): IHuman;
 export {};

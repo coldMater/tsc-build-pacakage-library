@@ -7,6 +7,7 @@ function generateHuman(param, isKorean) {
         age: param.age,
         korean: isKorean,
         under18: !param.isAdult,
+        created_at: new Date().toISOString(),
     };
 }
 exports.generateHuman = generateHuman;
