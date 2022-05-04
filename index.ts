@@ -21,3 +21,7 @@ export function generateHuman(param: IParam, isKorean: boolean): IHuman {
     created_at: new Date().toISOString(),
   }
 }
+
+export function generatePet(name: string, spec: 'CAT' | 'DOG'): string {
+  return `${name} is ${spec}`
+}

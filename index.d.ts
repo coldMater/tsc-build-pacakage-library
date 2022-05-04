@@ -11,4 +11,5 @@ interface IHuman {
     created_at: string;
 }
 export declare function generateHuman(param: IParam, isKorean: boolean): IHuman;
+export declare function generatePet(name: string, spec: 'CAT' | 'DOG'): string;
 export {};
